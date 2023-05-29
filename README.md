@@ -21,4 +21,5 @@ Acesso ao painel do H2 Database:
 * usuário: sa
 * senha: admin
 
+OBS: O projeto executará com uma carga inicial de dados
 
