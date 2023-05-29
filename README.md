@@ -21,5 +21,38 @@ Acesso ao painel do H2 Database:
 * usuário: sa
 * senha: admin
 
-OBS: O projeto executará com uma carga inicial de dados
+### Exemplos de Requisições
 
+* POST (/v1/financeiro)
+http://localhost:8081/v1/financeiro
+
+`{
+    "tipo" : "CRÉDITO",
+    "valor": "100.60",
+    "descricao": "Venda 3"
+}`
+
+* PUT (/v1/financeiro)
+http://localhost:8081/v1/financeiro
+
+`{
+    "id": "1",
+    "tipo": "CRÉDITO",
+    "valor": "300.45",
+    "descricao": "Venda 1"
+}`
+
+* GET (/v1/financeiro)
+  http://localhost:8081/v1/financeiro
+  
+* GET (/v1/financeiro)/{id}
+  http://localhost:8081/v1/financeiro/1
+
+* DELETE (/v1/financeiro)
+http://localhost:8081/v1/financeiro?id=5
+
+* GET (/v1/financeiro/consolidado)
+  http://localhost:8081/v1/financeiro/consolidado?data=2023-05-29
+
+
+OBS: O projeto executará com uma carga inicial de dados
